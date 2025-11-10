@@ -1,0 +1,47 @@
+import mitt, { type Emitter } from 'mitt';
+import { FrmType } from '../WF/Admin/EnumLab';
+
+type GloEvents = {
+  middleware_open_tab: { path: string; query: Recordable };
+  middleware_close_tab: { path: string; query: Recordable };
+  middle_close_current_tab: void;
+  openIframe: { title: string; url: string };
+  updateLabel: string;
+  openDrawer: Recordable;
+  __CHANGE_FORM_TYPE: FrmType;
+  updateFormConfig: string;
+  reloadForm: undefined | boolean;
+  insertContainer: Recordable;
+  insertField: Recordable;
+  showErr: string;
+  IsShowMsg: boolean;
+  updateGroupField: string | undefined;
+  updateHtml: string | undefined;
+  updateEnums: string | undefined;
+  deleteNode: string | undefined;
+  chooseWidget: undefined | null;
+  modalShow: any;
+  createField: any;
+  createContainer: Recordable;
+  innerData: Recordable;
+  InitFrm: string;
+  autoSave: undefined;
+  devFormSave: { frmID: string; rowData: Recordable; type: string };
+  getDevFormData: { type: string };
+  goback: { drawerVisible: boolean };
+  openPrompt: { promptVisible: boolean };
+  'update-en-row': { key: string; val: any };
+  'update-notifications': undefined;
+  isPreviewload: boolean;
+  subTableInsertBaseCol: { formID: string };
+  ccfast_base_com_drawer: string | undefined;
+  InitWorkCheck: { note: string };
+  'trigger-dtl-events': { type: string; dtlKey: string; dtlColumn: string; val: any };
+  LinkRefFlow: string;
+  WorkCheckSta: string;
+  InitMyView: string;
+  SearchRefresh: string;
+};
+
+const emitter: Emitter<GloEvents> = mitt();
+export default emitter;

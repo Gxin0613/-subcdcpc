@@ -1,0 +1,70 @@
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.input-prefix-icon {
+  color: #999999;
+  font-size: 14px;
+}
+
+.widgets-list {
+  .ghost {
+    width: 200px;
+    height: 30px;
+    box-sizing: border-box;
+    background: @primary-color;
+    border: 2px solid @primary-color;
+    outline-width: 0;
+    padding: 0;
+  }
+  .form-drag {
+    height: var(--sort-choose-height);
+    line-height: var(--sort-choose-height);
+    width: var(--sort-choose-width);
+    box-sizing: border-box;
+    border: 2px solid @primary-color;
+    outline-width: 0;
+    padding: 0;
+    display: var(--sort-choose-display);
+    color: @primary-color;
+  }
+}
+
+.n-config-provider {
+  width: 100%;
+  height: 100%;
+}
+
+.n-form-item-label {
+  box-sizing: border-box;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+input[type='password']::-ms-reveal {
+  /* 隐藏IE/Edge原生的密码查看按钮 */
+  display: none;
+}
+
+.n-col > div {
+  width: 100%;
+}
+
+.n-input-number {
+  width: 100%;
+}
+
+.n-input-group-label {
+  white-space: nowrap;
+}
+
+.n-date-picker {
+  width: 100%;
+}

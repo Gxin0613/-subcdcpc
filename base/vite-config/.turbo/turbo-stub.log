@@ -1,0 +1,6 @@
+
+> @vben/vite-config@1.0.0 stub D:\lowdm\subcdcpc\base\vite-config
+> pnpm unbuild --stub
+
+[36mi[39m Stubbing vite-config
+[36mi[39m Cleaning dist directory: [36m./dist[39m

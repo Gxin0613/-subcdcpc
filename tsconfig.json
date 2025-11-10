@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@vben/ts-config/vue-app.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "declaration": false,
+    "types": ["vite/client"],
+    "paths": {
+      "/@/*": ["src/*"],
+      "/#/*": ["types/*"],
+      "/@form/*": ["src/WF/Admin/FoolFormDesigner/*"],
+      "/@flow/*": ["src/WF/Admin/FlowDesigner/*"],
+    }
+  },
+  "include": [
+    "tests/**/*.ts",
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "types/**/*.d.ts",
+    "types/**/*.ts",
+    "build/**/*.ts",
+    "build/**/*.d.ts",
+    "vite.config.ts"
+  ],
+  "exclude": ["node_modules", "tests/server/**/*.ts", "dist", "**/*.js"]
+}

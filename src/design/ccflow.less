@@ -1,0 +1,109 @@
+.upload-modal-toolbar {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__btn {
+    margin-right: 10px;
+  }
+}
+
+.ant-modal-full-modal {
+  .ant-modal {
+    max-width: 100%;
+    top: 0;
+    padding-bottom: 0;
+    margin: 0;
+  }
+  .ant-modal-content {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh);
+  }
+  .ant-modal-body {
+    flex: 1;
+  }
+}
+
+.ant-modal {
+  .ant-modal-header {
+    margin-bottom: 0px;
+  }
+
+  .ant-modal-body {
+    padding: 0px;
+  }
+
+  .ant-modal-content {
+    padding: 0;
+  }
+
+  .ant-modal-footer {
+    margin-top: 0;
+  }
+}
+
+.ant-input:disabled {
+  color: rgba(0, 0, 0, 0.75) !important;
+}
+
+.ant-select-selector {
+  color: rgba(0, 0, 0, 0.75) !important;
+}
+
+.ant-menu-submenu-title .ant-menu-title-content {
+  font-weight: 600;
+}
+
+.github-markdown-body {
+  & h4,
+  & h3 {
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border-left: 3px solid var(--system-active-bg-color);
+    height: 15px;
+    margin-left: 30px;
+    line-height: 15px;
+    color: #000;
+
+    &::after {
+      content: ' ';
+      display: block;
+      margin-left: -10px;
+      padding-top: 10px;
+      border-bottom: 1px solid #cfcfcf;
+    }
+  }
+
+  & ul,
+  & ol {
+    & li {
+      //帮助
+      margin: 9px 0;
+      font-size: 13px;
+      color: #8c8c8c;
+      margin-left: 15px;
+
+      &:nth-child(1) {
+        margin-top: 25px;
+      }
+    }
+  }
+
+  img {
+    display: block;
+  }
+}
+
+/* tooltip 样式*/
+.ant-tooltip {
+  max-width: 500px;
+}
+.ant-tooltip-arrow::before,
+.ant-tooltip-inner {
+  background-color: #f27140 !important;
+  /* 修改为你需要的颜色 */
+  color: #fff !important;
+  /* 如果需要，也可以修改文字颜色 */
+}

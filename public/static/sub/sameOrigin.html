@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> iframe sameOrigin</title>
+</head>
+
+<body>
+    <h3>iframe sameOrigin</h3>
+</body>
+<script type="text/javascript">
+    window.Save = ({ action, msgType }) => {
+        console.log('action', action);
+        switch (action) {
+            case 'Send':
+                result = Send();
+                break;
+            case 'Delete':
+                result = Delete(e.data)
+                break;
+        }
+        return true;
+    }
+    function Send() {
+        alert('Send');
+        return true;
+    }
+
+    function Save() {
+        alert('Save');
+        return true;
+    }
+
+    function Delete() {
+        alert('Delete');
+        return true;
+    }
+
+</script>
+
+</html>

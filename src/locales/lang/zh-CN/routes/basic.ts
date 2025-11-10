@@ -1,0 +1,14 @@
+export default {
+  login: '登录',
+  errorLogList: '错误日志列表',
+  dbinstall: '安装环境',
+  SaasAdminLogin: 'SAAS超级管理员登录',
+  SaasLogin: 'SAAS普通用户登录',
+  SaasLoginModel: 'SAAS通用模式登录',
+  selectorg: 'SAAS版选择组织',
+  SaasHome: 'SAAS主页',
+  GroupLogin: '集团版登录',
+  GroupHome: '集团版主页',
+  OpLogin: '欧派组织登录',
+  DataVisualization: '仪表盘',
+};
